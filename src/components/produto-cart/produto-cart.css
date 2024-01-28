@@ -1,0 +1,47 @@
+.produto-cart-box{
+    border:  1px solid #E9E9E9;
+    padding: 10px;
+    display: flex;
+    margin: 20px;
+}
+
+.produto-cart-box img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.produto-cart-nome{
+    margin: 10px 3px 0 0;
+
+}
+
+.produto-cart-valor{
+    color: #ACACAC;
+    font-size: 0.8rem;
+    margin: 0 3px 10px 0;
+}
+
+.footer-produto-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-produto-btn{
+    border: 1px solid #CACACA;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.footer-produto-qtd{
+    margin: 0 10px;
+}
+
+.footer-produto-preco{
+    color: #E84F3D;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+}
