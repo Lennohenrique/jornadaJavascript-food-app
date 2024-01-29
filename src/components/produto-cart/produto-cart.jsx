@@ -1,22 +1,22 @@
 import "./produto-cart.css";
 import foto from "../../assets/hamburguer.png";
 
-function ProdutoCart(){
+function ProdutoCart(props){
     return <div className="produto-cart-box">
-        <img src={foto} alt="foto hamburguer" />
+        <img src={props.foto} alt="foto hamburguer" />
 
         <div>
-            <p className="produto-cart-nome">Spicy Burguer</p>
-            <p className="produto-cart-valor">R$ 15,00</p>
+            <p className="produto-cart-nome">{props.nome}</p>
+            <p className="produto-cart-valor">{new Intl.NumberFormat('pt-BR', {style: 'currency', currency: "BRL"}). format(props.preco)}</p>
 
             <div className="footer-produto-cart">
                 <div className="">
                     <button className="footer-produto-btn">-</button>
-                    <span className="footer-produto-qtd">01</span>
+                    <span className="footer-produto-qtd">{props.qtd}</span>
                     <button className="footer-produto-btn">+</button>
                 </div>
 
-                <p className="footer-produto-preco">R$15,00</p>
+                <p className="footer-produto-preco">{new Intl.NumberFormat('pt-BR', {style: 'currency', currency: "BRL"}). format(props.preco * props.qtd)}</p>
             </div>
         </div>
     </div>
